@@ -1,5 +1,7 @@
 # Vigil.AI
 Vigil.AI is a real-time crime analysis and prediction system that detects patterns, connects possibly related crimes, and identifies emerging hotspots using data-driven intelligence.
+
+
 Problem Statement
 Crime systems are reactive, not predictive → action starts after damage is done
 Rising urban crime is worsened by delayed detection and manual analysis
