@@ -1,5 +1,5 @@
 """
-SpiderNet — Crime Intelligence Dashboard
+vigilai — Crime Intelligence Dashboard
 Full Streamlit App: all notebook sections as interactive panels.
 """
 
@@ -22,7 +22,7 @@ warnings.filterwarnings("ignore")
 # PAGE CONFIG
 # ─────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="🕷️ SpiderNet Crime Intelligence",
+    page_title="🕷️ vigilai Crime Intelligence",
     page_icon="🕷️",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -157,7 +157,7 @@ def run_kmeans(_df, k=8, n=40_000):
 # SIDEBAR — FILTERS
 # ─────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## 🕷️ SpiderNet")
+    st.markdown("## 🕷️ vigilai")
     st.markdown("*Crime Intelligence Platform*")
     st.markdown("---")
 
@@ -201,8 +201,8 @@ districts  = compute_districts(df)
 # ─────────────────────────────────────────────────────────────
 # HEADER
 # ─────────────────────────────────────────────────────────────
-st.markdown("# 🕷️ SpiderNet — Crime Intelligence Dashboard")
-st.markdown("*San Francisco Police Department Crime Data — Powered by SpiderNet*")
+st.markdown("# 🕷️ vigilai — Crime Intelligence Dashboard")
+st.markdown("*San Francisco Police Department Crime Data — Powered by vigilai*")
 st.markdown("---")
 
 # ─────────────────────────────────────────────────────────────
@@ -733,7 +733,7 @@ Focus resources on the <b>{top_cat.index[0]}</b> crime type (most frequent).</di
     st.download_button(
         "⬇️ Download Filtered Data CSV",
         df.to_csv(index=False).encode(),
-        "spidernet_filtered.csv", "text/csv"
+        "vigilai_filtered.csv", "text/csv"
     )
 
 # ─────────────────────────────────────────────────────────────
@@ -742,7 +742,7 @@ Focus resources on the <b>{top_cat.index[0]}</b> crime type (most frequent).</di
 st.markdown("---")
 st.markdown(
     "<div style='text-align:center;color:#6e7681;font-size:12px'>"
-    "🕷️ SpiderNet Crime Intelligence Platform &nbsp;|&nbsp; "
+    "🕷️ vigilai Crime Intelligence Platform &nbsp;|&nbsp; "
     "SF Crime Dataset &nbsp;|&nbsp; Built with Streamlit"
     "</div>",
     unsafe_allow_html=True
