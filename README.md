@@ -40,15 +40,68 @@ Provides a dynamic, continuously updating view for faster and smarter decision-m
 
 ## Setup
 
-### 1) Clone the repo
-```git clone https://github.com/ariguchi/VigilAI.git```
-```cd VigilAI```
+### 1. Clone the repo
+```bash
+git clone https://github.com/ariguchi/VigilAI.git
+cd VigilAI
+```
 
-### 2) Install Dependencies
-```pip install -r requirements.txt```
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
 
-### 3) Add the dataset
-```data/train.csv```
+### 3. Add the dataset
+Download the **San Francisco Crime Classification** dataset from [Kaggle](https://www.kaggle.com/competitions/sf-crime/data) and place `train.csv` in the `data/` folder:
+```
+data/
+  train.csv
+```
 
-### 4) Run the app
-```streamlit run app.py```
+> ⚠️ The data files are **not included** in this repo due to their large size (~200 MB).
+
+### 4. Run the app
+```bash
+streamlit run app.py
+```
+
+---
+
+## Project Structure
+_
+```
+VigilAI/
+├── app.py                          # Main Streamlit dashboard
+├── requirements.txt                # Python dependencies
+├── notebooks/
+│   ├── VigilAI_Crime_Analysis.ipynb   # Full EDA notebook
+│   ├── ArachneX_analysis.ipynb          # Supplementary analysis
+│   ├── cluster_map.png
+│   ├── district_ranking.png
+│   ├── heatmap_day_hour.png
+│   ├── weekly_crime_dashboard.png
+│   └── ...
+└── data/                           # (not tracked — add your CSVs here)
+    └── train.csv
+```
+
+---
+
+## Tech Stack
+
+- **Streamlit** — Dashboard framework
+- **Pandas / NumPy** — Data wrangling
+- **Matplotlib / Seaborn** — Static charting
+- **Folium + streamlit-folium** — Interactive maps
+- **scikit-learn** — KMeans clustering
+- **SciPy** — Z-score statistical anomaly detection
+
+---
+
+## Dataset
+
+[SF Crime Classification — Kaggle](https://www.kaggle.com/competitions/sf-crime/data)  
+San Francisco Police Department incident records from 2003–2015.
+
+---
+
