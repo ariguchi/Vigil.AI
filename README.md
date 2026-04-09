@@ -1,5 +1,5 @@
-# Vigil.AI
-Vigil.AI is a real-time crime analysis and prediction system that detects patterns, connects possibly related crimes, and identifies emerging hotspots using data-driven intelligence.
+# VigilAI
+VigilAI is a real-time crime analysis and prediction system that detects patterns, connects possibly related crimes, and identifies emerging hotspots using data-driven intelligence.
 
 
 
@@ -37,3 +37,18 @@ Provides a dynamic, continuously updating view for faster and smarter decision-m
 - Identification of connected crime networks
 - Real-time crime surge detection with pulse/vibration effect
 - Alerts for nearby at-risk zones
+
+## Setup
+
+### 1) Clone the repo
+```git clone https://github.com/ariguchi/VigilAI.git```
+```cd VigilAI```
+
+### 2) Install Dependencies
+```pip install -r requirements.txt```
+
+### 3) Add the dataset
+```data/train.csv```
+
+### 4) Run the app
+```streamlit run app.py```
