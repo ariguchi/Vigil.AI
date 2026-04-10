@@ -1,5 +1,5 @@
 """
-vigilai — Crime Intelligence Dashboard
+VigilAI — Crime Intelligence Dashboard
 Full Streamlit App: all notebook sections as interactive panels.
 """
 
